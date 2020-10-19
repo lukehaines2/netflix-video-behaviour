@@ -1,6 +1,11 @@
+body {
+  overflow: hidden;
+  margin: 0;
+}
+
 .container {
   display: flex;
-  margin-top: 50px;
+  margin-top: 125px;
 }
 
 .item {
@@ -26,11 +31,103 @@
   z-index: 1;
 }
 
-body {
-  overflow: hidden;
-}
-
 .item img {
   display: block;
   max-width: 100%;
+}
+
+/* NETFLIX STYLES */
+
+.our-story-header-wrapper {
+  background-color: transparent;
+  -webkit-transition: background-color .5s;
+  -o-transition: background-color .5s;
+  -moz-transition: background-color .5s;
+  transition: background-color .5s;
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 5rem;
+  z-index: 10;
+}
+
+.our-story-header {
+  position: relative;
+  margin: 0 3.5rem;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1449px) and (min-width: 950px) {
+  .our-story-header-wrapper {
+    height: 4rem;
+  }
+}
+
+.nfLogo {
+  fill: #e50914;
+  line-height: normal;
+}
+
+.nfLogo .svg-icon-netflix-logo {
+  padding-top: .5rem;
+  height: 45px;
+  width: 167px;
+}
+
+@media only screen and (max-width: 1449px) and (min-width: 950px) {
+  .nfLogo .svg-icon-netflix-logo {
+    height: 36px;
+    width: 134px;
+  }
+}
+
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.our-story-card-background {
+  z-index: 0;
+  position: absolute;
+  top: -70px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1449px) and (min-width: 950px),
+only screen and (min-width: 1450px) {
+  .our-story-card-background {
+    top: -100px;
+  }
+}
+
+.hero-card.vlv .concord-img-gradient {
+  background: rgba(0, 0, 0, .4);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, .8)), color-stop(60%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .8)));
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, .8) 100%);
+  background-image: -moz- oldlinear-gradient(bottom, rgba(0, 0, 0, .8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, .8) 100%);
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, .8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, .8) 100%);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, .8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, .8) 100%);
+}
+
+.hero-card .concord-img-gradient {
+  position: absolute;
+  background: rgba(0, 0, 0, .5);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .7))), radial-gradient(50% 100%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .7) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .7) 100%), -webkit-radial-gradient(50% 100%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .7) 100%);
+  background-image: -moz- oldlinear-gradient(bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .7) 100%), -moz- oldradial-gradient(50% 100%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .7) 100%);
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .7) 100%), -o-radial-gradient(50% 100%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .7) 100%);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .7) 100%), radial-gradient(50% 100%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .7) 100%);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
